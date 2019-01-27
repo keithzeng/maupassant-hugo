@@ -14,13 +14,17 @@
     </section>
 
     <section class="widget">
+        {{ partial "series" . }}
+    </section>
+
+    <section class="widget">
         {{ partial "tags" . }}
     </section>
 
     {{ partial "links" . }}
 
     <section class="widget">
-        <h3 class="widget-title">其它</h3>
+        <h3 class="widget-title">Other</h3>
         <ul class="widget-list">
             <li><a href="{{ "index.xml" | absURL }}">文章 RSS</a></li>
         </ul>
