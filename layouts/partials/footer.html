@@ -9,8 +9,7 @@
     </div>
 </footer>
 
-<!-- {{ if .IsPage }} -->
-    <script type="text/javascript">
+<script type="text/javascript">
     //添加行号
     (function(){
         $("pre code").parent().addClass("line-numbers")
@@ -22,10 +21,10 @@
             processEscapes: true
         }
     };
-    </script>
-    <script type="text/javascript" src="{{ "js/prism.js" | relURL}}" async="true"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-<!-- {{ end }} -->
+</script>
+<script type="text/javascript" src="{{ "js/prism.js" | relURL}}" async="true"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
 <a id="rocket" href="#top"></a>
 <script type="text/javascript" src="{{ "js/totop.js?v=0.0.0" | relURL }}" async=""></script>
 {{ template "_internal/google_analytics_async.html" . }}
