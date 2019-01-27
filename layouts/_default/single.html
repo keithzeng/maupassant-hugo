@@ -13,7 +13,7 @@
                             <h1 class="post-title">{{ .Title }}</h1>
                         </header>
                         <date class="post-meta meta-date">
-                            {{ .Date.Year }}年{{ printf "%d" .Date.Month }}月{{ .Date.Day }}日
+                            {{ .Date.Year }}/{{ printf "%d" .Date.Month }}/{{ .Date.Day }}
                         </date>
                         {{ with .Params.Categories }}
                         <div class="post-meta">
@@ -25,7 +25,7 @@
                         {{ end }}
                         {{ if .Site.Params.busuanzi }}
                         <div class="post-meta">
-                            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span> 阅读</span></span>
+                            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span> Views</span></span>
                         </div>
                         {{ end }}
                         <div class="post-content">
@@ -42,7 +42,7 @@
                                 {{ end }}
                             </ul>
                             {{ else }}
-                            没有标签
+                            No Tag
                             {{ end }}
                         </div>
                     </article>
