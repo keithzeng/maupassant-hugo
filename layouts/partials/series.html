@@ -2,7 +2,7 @@
 <ul class="widget-list">
     {{ range $name, $taxonomy := .Site.Taxonomies.series }}
     <li>
-        <a href="{{ "/categories/" | absLangURL }}{{ $name | urlize }}/">{{ $name }}({{len $taxonomy}})</a>
+        <a href="{{ "/series/" | absLangURL }}{{ $name | urlize }}/">{{ $name }}({{len $taxonomy}})</a>
     </li>
     {{ end }}
 </ul>

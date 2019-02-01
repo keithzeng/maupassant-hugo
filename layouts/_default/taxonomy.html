@@ -9,19 +9,11 @@
 
             <div class="col-8" id="main">
                 <div class="res-cons">
-                    {{ if eq .Data.Singular "category" }}
                     <h3 class="archive-title">
-                        Archived
+                        Articles related to
                         <span class="keyword">{{ .Data.Term }}</span>
-                        Articles
+                        {{ .Data.Singular }}
                     </h3>
-                    {{ else if eq .Data.Singular "tag" }}
-                    <h3 class="archive-title">
-                        Tagged
-                        <span class="keyword">{{ .Data.Term }}</span>
-                        Articles
-                    </h3>
-                    {{ end }}
 
                     {{ range $index,$data := (where .Paginator.Pages "Type" "in" (slice "post" "posts")) }}
                         <article class="post">
